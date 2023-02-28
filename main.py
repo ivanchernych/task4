@@ -60,6 +60,7 @@ class Game:
             tick += 1
             clock.tick(FPS)
             if pygame.mouse.get_focused():
+                pygame.mouse.set_visible(False)
                 cursor.update()
                 cursor.draw(self.screen)
             pygame.display.flip()
